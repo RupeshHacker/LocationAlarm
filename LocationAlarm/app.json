@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "LocationAlarm",
+    "slug": "location-alarm",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "android": {
+      "package": "com.rupesh.locationalarm",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "POST_NOTIFICATIONS",
+        "VIBRATE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "isAndroidBackgroundLocationEnabled": true,
+          "locationAlwaysAndWhenInUsePermission": "Needed to wake the alarm when you reach your destination."
+        }
+      ],
+      "expo-notifications"
+    ]
+  }
+}
